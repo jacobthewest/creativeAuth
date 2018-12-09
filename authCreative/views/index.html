@@ -1,0 +1,73 @@
+<!doctype html>
+<html ng-app="myApp"> 
+    
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+        
+<body>  
+    <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						<h2 id="welcomeText">Welcome. You are Logged In as <%= username %></h2><br>
+					</span>
+
+					<div class="wrap-input100 validate-input">
+						
+						<span id="indexMsg" class="focus-input100">
+                            <strong><%= msg %></strong>
+                        </span>
+                        
+					</div>
+					<br>
+					<div class="wrap-input100 validate-input">
+						
+						<span id="indexMsg" class="focus-input100">
+                            <strong>Favorite Color: <%= color %></strong>
+                        </span>
+					</div>
+					<br>
+					<div class="wrap-input100 validate-input">
+						
+						<span id="indexMsg" class="focus-input100">
+                            <strong>Favorite Sports Team: <%= sports %></strong>
+                        </span>
+					</div>
+					<br>
+					<div class="wrap-input100 validate-input">
+						
+						<span id="indexMsg" class="focus-input100">
+                            <strong>Favorite Dessert: <%= dessert %></strong>
+                        </span>
+					</div>
+					<br>
+					<div class="wrap-input100 validate-input">
+						
+						<span id="indexMsg" class="focus-input100">
+                            <strong>Relationship Status: <%= relationship %></strong>
+                        </span>
+					</div>
+					
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							<a id="logoutLink" href="/logout">logout</a>
+						</button>
+					</div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							<a id="editLink" href="/user">Edit User</a>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+</html>

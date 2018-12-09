@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+        
+<body>  
+    <div class="form-container limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+				
+                <!--<p class="form-header">Login</p>-->
+                <form method="POST" action="/login">
+                    
+                    <span class="login100-form-title">
+						Member Login
+					</span>
+                    
+                    <div class="wrap-input100" data-validate = "Valid email is required: ex@abc.xyz">
+						<input type="text" id="username" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+                    
+                    <div class="wrap-input100" data-validate = "Password is required">
+						<input class="" type="password" id="password" name="password" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+                    
+                    
+                    <div class="container-login100-form-btn">
+						<!--<button class="login100-form-btn">-->
+						<!--	Login-->
+						<!--</button>-->
+						<input type="submit" id="login" value="Login">
+					</div>
+					<div class="text-center p-t-136">
+						<a id="signUpLink" class="txt2" href="/signup">Sign Up</a><br><br>
+                        <span id="loginMsg">
+                        <%= msg %>
+                        </span>
+				    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+        
+</html>
